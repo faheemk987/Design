@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create an account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans w-screen h-screen m-0 p-0 flex">
+
+    <div class="w-full h-full flex flex-col md:flex-row">
+
+        <!-- Left image panel -->
+        <div class="hidden md:block md:w-1/2 h-full relative bg-cover bg-center">
+            <img class="absolute inset-0 w-full h-full object-cover" src="./background.jpg" alt="Background">
+        </div>
+
+        <!-- Right form panel -->
+        <div
+            class="w-full md:w-1/2 h-full bg-white flex flex-col justify-center px-8 sm:px-16 lg:px-24 overflow-y-auto">
+
+            <!-- Icon -->
+            <div class="flex justify-center mb-4">
+                <div class=" flex items-center justify-center">
+                    <!-- <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20 "> -->
+                    <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M37 37L37 18.5C37 8.28274 28.7173 1.41726e-05 18.5 1.28328e-05C8.28274 1.1493e-05 1.13952e-05 8.28274 1.00554e-05 18.5L7.62939e-06 37L37 37Z"
+                            fill="#6938EF" />
+                        <path
+                            d="M7.78921 37C7.78921 30.9055 12.7298 25.9649 18.8243 25.9649C24.9188 25.9649 29.8594 30.9055 29.8594 37L7.78921 37Z"
+                            fill="#F0276C" />
+                        <path
+                            d="M7.78921 37C7.78921 43.0945 12.7298 48.0351 18.8243 48.0351C24.9188 48.0351 29.8594 43.0945 29.8594 37L7.78921 37Z"
+                            fill="#EDB500" />
+                        <path
+                            d="M18.5 22.0702C21.5473 22.0702 24.0176 19.5999 24.0176 16.5526C24.0176 13.5054 21.5473 11.0351 18.5 11.0351C15.4528 11.0351 12.9825 13.5054 12.9825 16.5526C12.9825 19.5999 15.4528 22.0702 18.5 22.0702Z"
+                            fill="#FAFAFF" />
+                    </svg>
+
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                        clip-rule="evenodd" />
+                    </svg>
+                </div>
+            </div>
+
+            <h1 class="text-2xl font-bold text-center text-gray-900 mb-6">Create an account</h1>
+
+            <!-- Google button -->
+            <button
+                class="w-full border border-gray-200 rounded-2xl py-3 px-4 flex items-center justify-center gap-2 text-sm font-medium text-gray-700 hover:bg-gray-50 transition mb-5">
+                Create account with Google
+                <svg class="w-4 h-4" viewBox="0 0 24 24">
+                    <path fill="#4285F4"
+                        d="M23.766 12.276c0-.818-.074-1.606-.213-2.361H12.24v4.467h6.482a5.54 5.54 0 01-2.4 3.633v3.02h3.885c2.273-2.093 3.559-5.176 3.559-8.759z" />
+                    <path fill="#34A853"
+                        d="M12.24 24c3.24 0 5.956-1.075 7.941-2.905l-3.885-3.02c-1.076.72-2.454 1.147-4.056 1.147-3.12 0-5.76-2.107-6.702-4.938H1.516v3.11A11.997 11.997 0 0012.24 24z" />
+                    <path fill="#FBBC05"
+                        d="M5.538 14.284A7.2 7.2 0 015.16 12c0-.793.137-1.564.379-2.284V6.605H1.516A11.997 11.997 0 000 12c0 1.935.463 3.767 1.516 5.395l4.022-3.11z" />
+                    <path fill="#EA4335"
+                        d="M12.24 4.775c1.762 0 3.344.605 4.588 1.793l3.442-3.442C18.192 1.19 15.476 0 12.24 0 7.42 0 3.257 2.7 1.516 6.605l4.022 3.11c.943-2.83 3.583-4.94 6.702-4.94z" />
+                </svg>
+            </button>
+
+            <!-- Divider -->
+            <div class="flex items-center gap-3 mb-5">
+                <div class="flex-1 h-px bg-gray-200"></div>
+                <span class="text-xs text-gray-400">Or</span>
+                <div class="flex-1 h-px bg-gray-200"></div>
+            </div>
+
+            <!-- Form -->
+            <form class="space-y-4">
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Email Address</label>
+                    <input type="email" placeholder="Enter your email address"
+                        class="w-full border border-gray-200 rounded-2xl py-3 px-4 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400" />
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Full Name</label>
+                    <input type="text" placeholder="Enter your full name"
+                        class="w-full border border-gray-200 rounded-2xl py-3 px-4 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400" />
+                </div>
+
+                <div>
+                    <label class="block text-xs font-medium text-gray-500 mb-1">Password</label>
+                    <div class="relative">
+                        <input type="password" placeholder="Create your password"
+                            class="w-full border border-gray-200 rounded-2xl py-3 px-4 pr-10 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-400" />
+                        <button type="button" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit"
+                    class="w-full bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 transition text-white font-semibold py-3 rounded-full mt-2">
+                    Create an account
+                </button>
+            </form>
+
+            <p class="text-center text-sm text-gray-500 mt-5">
+                Already have an account?
+                <a href="#" class="text-purple-600 font-medium hover:underline">Login</a>
+            </p>
+
+            <div class="flex justify-center gap-4 mt-6 mb-8 text-gray-400">
+                <a href="#" class="hover:text-purple-600">
+                 <img src="faheem/icon/facebook.svg" alt="Icon">
+                </a>
+                <a href="#" class="hover:text-purple-600"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M23 4.9c-.8.4-1.6.6-2.5.8.9-.5 1.6-1.4 1.9-2.4-.8.5-1.8.9-2.7 1.1a4.3 4.3 0 00-7.4 3.9A12.2 12.2 0 013 3.9a4.3 4.3 0 001.3 5.7c-.7 0-1.4-.2-2-.5v.1c0 2.1 1.5 3.8 3.4 4.2-.6.2-1.3.2-1.9.1.5 1.7 2.1 2.9 4 3A8.6 8.6 0 012 18.4a12.2 12.2 0 006.6 1.9c7.9 0 12.2-6.5 12.2-12.2v-.6c.8-.6 1.5-1.3 2.2-2.1z" />
+                    </svg></a>
+                <a href="#" class="hover:text-purple-600"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2 0 1.9.2 2.3.4.6.2 1 .5 1.4.9.4.4.7.8.9 1.4.2.4.4 1.1.4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.9-.4 2.3-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1.1.4-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.9-.2-2.3-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1.1-.4-2.3-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c0-1.2.2-1.9.4-2.3.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1.1-.4 2.3-.4 1.3-.1 1.7-.1 4.9-.1zM12 0C8.7 0 8.3 0 7 .1 5.7.1 4.8.3 4 .6c-.8.3-1.5.7-2.2 1.4C1.1 2.7.7 3.4.4 4.2.1 5 0 5.9 0 7.2 0 8.4 0 8.8 0 12s0 3.6.1 4.8c0 1.3.2 2.2.5 3 .3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.8.3 1.7.5 3 .5C8.3 24 8.7 24 12 24s3.6 0 4.8-.1c1.3 0 2.2-.2 3-.5.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.3-.8.5-1.7.5-3 .1-1.2.1-1.6.1-4.8s0-3.6-.1-4.8c0-1.3-.2-2.2-.5-3-.3-.8-.7-1.5-1.4-2.2C21.3 1.1 20.6.7 19.8.4 19 .1 18.1 0 16.8 0 15.6 0 15.2 0 12 0zm0 5.8a6.2 6.2 0 100 12.4 6.2 6.2 0 000-12.4zm0 10.2a4 4 0 110-8 4 4 0 010 8zm6.4-10.5a1.4 1.4 0 11-2.9 0 1.4 1.4 0 012.9 0z" />
+                    </svg></a>
+                <a href="#" class="hover:text-purple-600"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8.3 18.4H5.7V9.6h2.6v8.8zM7 8.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm11.4 9.9h-2.6v-4.3c0-1 0-2.4-1.5-2.4s-1.7 1.1-1.7 2.3v4.4H10V9.6h2.5v1.2h.1c.3-.7 1.2-1.5 2.5-1.5 2.7 0 3.2 1.8 3.2 4.1v5z" />
+                    </svg></a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
