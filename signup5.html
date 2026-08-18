@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Phnes Design Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200 min-h-screen flex items-center justify-center p-4 sm:p-8">
+
+    <!-- Responsive Canvas Container -->
+    <div
+        class="w-full max-w-[1440px] lg:h-[1024px] rounded-[20px] bg-[#EAEAEA] shadow-2xl flex flex-col lg:flex-row overflow-hidden">
+
+        <!-- Left Column: Form Section -->
+        <div class="w-full lg:w-1/2 h-full p-6 sm:p-10 lg:p-16 flex flex-col justify-between bg-[#EAEAEA]">
+            <div class="max-w-md mx-auto w-full my-auto py-8 lg:py-0">
+
+                <!-- Heading & Description -->
+                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 leading-tight mb-4">
+                    Welcome to Phnes Design Agency
+                </h1>
+                <p class="text-sm text-gray-600 mb-8 leading-relaxed">
+                    We craft experiences that resonate, designs that captivate, and solutions that leave a lasting
+                    impression. Welcome to a world where your vision takes shape.
+                </p>
+
+                <!-- Form Elements -->
+                <form class="space-y-6">
+
+                    <!-- Email Input -->
+                    <div>
+                        <label class="block text-xs text-gray-500 mb-1">Email</label>
+                        <input type="email"
+                            class="w-full bg-transparent border-b border-gray-400 py-1 text-sm text-gray-800 focus:outline-none focus:border-gray-800 transition-colors" />
+                    </div>
+
+                    <!-- Username Input -->
+                    <div>
+                        <label class="block text-xs text-gray-500 mb-1">Username</label>
+                        <input type="text"
+                            class="w-full bg-transparent border-b border-gray-400 py-1 text-sm text-gray-800 focus:outline-none focus:border-gray-800 transition-colors" />
+                    </div>
+
+                    <!-- Password Input -->
+                    <div class="relative">
+                        <label class="block text-xs text-gray-500 mb-1">Password</label>
+                        <input type="password"
+                            class="w-full bg-transparent border-b border-gray-400 py-1 pr-12 text-sm text-gray-800 focus:outline-none focus:border-gray-800 transition-colors" />
+                        <button type="button"
+                            class="absolute right-0 bottom-1 text-xs text-gray-400 flex items-center gap-1 hover:text-gray-600">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                            Hide
+                        </button>
+                    </div>
+
+                    <!-- Password Requirements -->
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-y-2 text-[10px] text-gray-400 pt-1">
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+                            <span>Use 8 or more characters</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+                            <span>One uppercase character</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+                            <span>One lowercase character</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+                            <span>One special character</span>
+                        </div>
+                        <div class="flex items-center gap-1.5">
+                            <span class="w-1.5 h-1.5 rounded-full bg-gray-400"></span>
+                            <span>One number</span>
+                        </div>
+                    </div>
+
+                    <!-- Terms Checkbox -->
+                    <div class="flex items-start gap-2 pt-2">
+                        <input type="checkbox" id="terms" checked
+                            class="mt-0.5 rounded border-gray-400 text-gray-800 focus:ring-0 accent-gray-800" />
+                        <label for="terms" class="text-[11px] text-gray-500 leading-tight">
+                            I agree to the <a href="#" class="underline font-medium text-gray-700">Terms of Service</a>
+                            and acknowledge you've read our <a href="#"
+                                class="underline font-medium text-gray-700">Privacy Policy</a>
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-full py-3 bg-gray-300 text-gray-500 font-medium text-sm rounded-full cursor-not-allowed transition-colors">
+                        Create an account
+                    </button>
+                </form>
+
+                <!-- Footer Link -->
+                <p class="text-xs text-gray-500 mt-6 text-left">
+                    Already a member? <a href="#" class="font-bold text-gray-900 hover:underline">Log in</a>
+                </p>
+
+            </div>
+        </div>
+
+        <!-- Right Column: Image Section (hidden on small screens) -->
+        <div class="hidden lg:block lg:w-1/2 h-full">
+            <img src="./images/Image.png" alt="Design Team Working" class="w-full h-full object-cover" />
+        </div>
+
+    </div>
+
+</body>
+
+</html>
