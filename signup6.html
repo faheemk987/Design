@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Your Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-300 min-h-screen flex items-center justify-center p-3 sm:p-6 font-sans">
+
+    <!-- Main Container -->
+    <div class="relative bg-gray-100 rounded-3xl p-2 sm:p-4 shadow-2xl flex flex-col lg:flex-row max-w-5xl w-full">
+
+        <!-- Left Blue Card Container (hidden on small screens, visible from lg breakpoint) -->
+        <div
+            class="hidden lg:flex lg:w-[45%] bg-blue-700 rounded-[10px] p-6 sm:p-8 lg:p-10 flex-col justify-between text-white shadow-md m-1 sm:m-2 lg:m-[14px]">
+
+            <!-- Top Logo Section -->
+            <div class="flex items-center gap-3">
+                <svg width="49" height="37" viewBox="0 0 49 37" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="w-9 h-7 sm:w-[49px] sm:h-[37px] shrink-0">
+                    <path
+                        d="M37 0L18.5 -2.42598e-06C8.28274 -3.76581e-06 1.41726e-05 8.28273 1.28328e-05 18.5C1.1493e-05 28.7173 8.28274 37 18.5 37L37 37L37 0Z"
+                        fill="#FCFCFC" />
+                    <path
+                        d="M36.9999 29.2105C30.9054 29.2105 25.9648 24.27 25.9648 18.1755C25.9648 12.081 30.9054 7.14038 36.9999 7.14038L36.9999 29.2105Z"
+                        fill="#FE3278" />
+                    <path
+                        d="M37 29.2105C43.0945 29.2105 48.035 24.27 48.035 18.1755C48.035 12.081 43.0945 7.14038 37 7.14038L37 29.2105Z"
+                        fill="#FCD451" />
+                    <path
+                        d="M22.0702 18.5C22.0702 15.4528 19.5999 12.9825 16.5526 12.9825C13.5054 12.9825 11.0351 15.4528 11.0351 18.5C11.0351 21.5473 13.5054 24.0176 16.5526 24.0176C19.5999 24.0176 22.0702 21.5473 22.0702 18.5Z"
+                        fill="#5925DC" />
+                </svg>
+                <span class="font-semibold text-lg tracking-wide">Logo</span>
+            </div>
+
+            <!-- Center Hero Text -->
+            <div class="my-auto py-8 sm:py-10 lg:py-12">
+                <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight mb-4">
+                    Connecting Talent <br /> to Opportunities
+                </h1>
+                <p class="text-blue-100 text-sm leading-relaxed max-w-md">
+                    Discover endless opportunities on FreelanceHub, where talented freelancers and businesses unite.
+                    Jump right in with us!
+                </p>
+            </div>
+
+            <!-- Bottom Testimonial Card -->
+            <div class="bg-blue-700/60 backdrop-blur-sm rounded-xl p-4 sm:p-5 border border-blue-500/30">
+                <p class="text-xs text-blue-100 leading-relaxed mb-4">
+                    "As a freelancer, finding the right gigs can be challenging, but FreelanceHub made it simple. I love
+                    the personalized job recommendations and the ability to showcase my portfolio."
+                </p>
+                <div class="flex items-center gap-3">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80"
+                        alt="Daphne Park" class="w-9 h-9 rounded-full object-cover border border-white/40 shrink-0" />
+                    <div>
+                        <h4 class="text-xs font-semibold">Daphne Park</h4>
+                        <p class="text-[10px] text-blue-200">UI/UX Designer</p>
+                    </div>
+                </div>
+
+                <!-- Pagination Dots -->
+                <div class="flex justify-center gap-1.5 mt-4">
+                    <span class="w-2 h-2 rounded-full bg-white"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-400/60"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-blue-400/60"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Right Content Flow -->
+        <div
+            class="w-full lg:w-[55%] pt-6 sm:pt-8 lg:pt-[72px] px-4 sm:px-6 lg:px-8 pb-6 sm:pb-8 flex flex-col gap-6 sm:gap-8 lg:gap-[44px]">
+
+            <!-- Header Block -->
+            <div>
+                <h2 class="text-xl sm:text-2xl font-bold text-gray-900 mb-1">Create your account with us below</h2>
+                <p class="text-xs text-gray-500">
+                    Already have an account? <a href="#" class="text-blue-600 font-medium hover:underline">Login</a>
+                </p>
+            </div>
+
+            <!-- Form Section -->
+            <form class="flex flex-col gap-5">
+
+                <!-- Account Type Selection -->
+                <div>
+                    <label class="block text-xs font-medium text-gray-700 mb-2">You're creating an account as?</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <label
+                            class="flex items-center gap-2 border border-blue-600 bg-blue-50/50 rounded-lg p-3 cursor-pointer">
+                            <input type="radio" name="account_type" checked class="text-blue-600 focus:ring-0" />
+                            <span class="text-xs font-medium text-gray-800">As a Designer</span>
+                        </label>
+                        <label
+                            class="flex items-center gap-2 border border-gray-200 rounded-lg p-3 cursor-pointer hover:border-gray-300">
+                            <input type="radio" name="account_type" class="text-blue-600 focus:ring-0" />
+                            <span class="text-xs font-medium text-gray-500">As a Developer</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Full Name -->
+                <div>
+                    <label class="block text-xs font-medium text-gray-700 mb-1">Full Name</label>
+                    <input type="text" value="David Goliath"
+                        class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:border-blue-600 bg-white" />
+                </div>
+
+                <!-- Email Address -->
+                <div>
+                    <label class="block text-xs font-medium text-gray-700 mb-1">Email Address</label>
+                    <input type="email" placeholder="Enter your email address"
+                        class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:border-blue-600 bg-white placeholder-gray-400" />
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <label class="block text-xs font-medium text-gray-700 mb-1">Password</label>
+                    <div class="relative">
+                        <input type="password" placeholder="Create your password"
+                            class="w-full border border-gray-300 rounded-lg px-3 py-2 pr-10 text-sm text-gray-800 focus:outline-none focus:border-blue-600 bg-white placeholder-gray-400" />
+                        <button type="button" class="absolute right-3 top-2.5 text-gray-400 hover:text-gray-600">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Skills Tags -->
+                <div>
+                    <label class="block text-xs font-medium text-gray-700 mb-1">Select your Skills</label>
+                    <input type="text" placeholder="Search skills here..."
+                        class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm text-gray-800 focus:outline-none focus:border-blue-600 bg-white mb-3 placeholder-gray-400" />
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="inline-flex items-center gap-1.5 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">
+                            Wireframing <button type="button" class="text-gray-500 hover:text-black">×</button>
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-1.5 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">
+                            Prototyping <button type="button" class="text-gray-500 hover:text-black">×</button>
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-1.5 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">
+                            UI/UX <button type="button" class="text-gray-500 hover:text-black">×</button>
+                        </span>
+                        <span
+                            class="inline-flex items-center gap-1.5 bg-gray-200 text-gray-700 text-xs px-3 py-1 rounded-full">
+                            Research <button type="button" class="text-gray-500 hover:text-black">×</button>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit"
+                    class="w-full sm:max-w-[200px] mt-2 py-2.5 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm rounded-lg shadow-sm transition-colors">
+                    Create Account
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
