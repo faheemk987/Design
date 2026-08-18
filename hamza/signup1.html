@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Sign Up</title>
     <!-- <style>
@@ -19,30 +23,49 @@
   <body
     class="bg-[#19181F] text-white min-h-screen flex items-center justify-center p-4 sm:p-8"
   >
-    <div
-      class="w-full max-w-6xl overflow-hidden rounded-[30px] border border-white/10 bg-[#1d1b24] shadow-[0_30px_80px_rgba(0,0,0,0.45)]"
-    >
-      <div class="flex flex-col lg:flex-row min-h-[760px]">
+    <div class="w-full overflow-hidden rounded-[30px]">
+      <div class="flex flex-col lg:flex-row gap-[200px]">
         <div
-          class="flex w-full items-center justify-center px-6 py-10 sm:px-10 lg:w-[42%] lg:px-12"
+          class="flex w-full items-center justify-center px-6 py-10 sm:px-10 lg:w-[60%] lg:px-12"
         >
           <div class="w-full max-w-md">
             <div class="mb-8 flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <div
+                <svg
+                  width="37"
+                  height="49"
+                  viewBox="0 0 37 49"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M37 37L37 18.5C37 8.28274 28.7173 1.41726e-05 18.5 1.28328e-05C8.28274 1.1493e-05 1.13952e-05 8.28274 1.00554e-05 18.5L7.62939e-06 37L37 37Z"
+                    fill="#7A5AF8"
+                  />
+                  <path
+                    d="M7.78945 37C7.78945 30.9055 12.73 25.9649 18.8245 25.9649C24.919 25.9649 29.8596 30.9055 29.8596 37L7.78945 37Z"
+                    fill="#FE3278"
+                  />
+                  <path
+                    d="M7.78945 37C7.78945 43.0945 12.73 48.0351 18.8245 48.0351C24.919 48.0351 29.8596 43.0945 29.8596 37L7.78945 37Z"
+                    fill="#FCD451"
+                  />
+                  <path
+                    d="M18.5 22.0702C21.5472 22.0702 24.0175 19.5999 24.0175 16.5526C24.0175 13.5054 21.5472 11.0351 18.5 11.0351C15.4527 11.0351 12.9824 13.5054 12.9824 16.5526C12.9824 19.5999 15.4527 22.0702 18.5 22.0702Z"
+                    fill="#FAFAFF"
+                  />
+                </svg>
+
+                <!-- <div
                   class="flex h-10 w-10 items-center justify-center rounded-full bg-[#7A5AF8] text-lg font-bold text-white shadow-[0_8px_20px_rgba(122,90,248,0.5)]"
                 >
                   N
                 </div>
                 <span class="text-lg font-semibold tracking-wide text-white/90"
                   >Nova</span
-                >
+                > -->
+                <h1 class="text-[20px] font-semibold text-white">logo</h1>
               </div>
-              <button
-                class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/80 transition hover:bg-white/10"
-              >
-                English
-              </button>
             </div>
 
             <div class="mb-8">
@@ -136,8 +159,7 @@
               <button
                 class="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white/80 transition hover:bg-white/10"
               >
-                <span class="text-base">f</span>
-                Facebook
+                <i class="fa-brands fa-facebook"></i>
               </button>
             </div>
 
@@ -152,21 +174,13 @@
           </div>
         </div>
 
-        <div
-          class="relative lg:w-[58%] min-h-[420px] overflow-hidden bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.08),_rgba(12,10,18,0.2)_35%,_rgba(10,10,17,0.8)_100%)]"
-        >
-          <div
-            class="absolute inset-0 bg-[linear-gradient(90deg,#e7ca8c_0%,#d8b1a2_30%,#7f78db_100%)] opacity-95"
-          ></div>
-          <div
-            class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_35%)]"
-          ></div>
+        <div class="relative lg:w-[1200px] min-h-[840px] overflow-hidden">
           <img
             src="image/signup1.jpg"
             alt="Decorative sign-up illustration"
-            class="absolute inset-0 h-full w-full object-cover opacity-100"
+            class="absolute inset-0 h-full w-[100%] object-cover opacity-100"
           />
-          <div class="absolute inset-x-0 bottom-0 h-36"></div>
+          <!-- <div class="absolute inset-x-0 bottom-0 h-36"></div> -->
         </div>
       </div>
     </div>
