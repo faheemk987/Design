@@ -3,56 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Sign Up</title>
-    <!-- <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      .glass {
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-      }
-    </style> -->
   </head>
   <body
     class="bg-[#19181F] text-white min-h-screen flex items-center justify-center p-4 sm:p-8"
   >
-    <div
-      class="w-full max-w-6xl overflow-hidden rounded-[30px] border border-white/10 bg-[#1d1b24] shadow-[0_30px_80px_rgba(0,0,0,0.45)]"
-    >
-      <div class="flex flex-col lg:flex-row min-h-[760px]">
+    <div class="w-full overflow-hidden rounded-[30px]">
+      <div class="flex flex-col lg:flex-row gap-[200px]">
         <div
-          class="flex w-full items-center justify-center px-6 py-10 sm:px-10 lg:w-[42%] lg:px-12"
+          class="flex w-full items-center justify-center px-6 py-10 sm:px-10 lg:w-[60%] lg:px-12"
         >
           <div class="w-full max-w-md">
             <div class="mb-8 flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <div
+                <img src="icons/logo.svg" alt="logo" class="h-10 w-10" />
+
+                <!-- <div
                   class="flex h-10 w-10 items-center justify-center rounded-full bg-[#7A5AF8] text-lg font-bold text-white shadow-[0_8px_20px_rgba(122,90,248,0.5)]"
                 >
                   N
                 </div>
                 <span class="text-lg font-semibold tracking-wide text-white/90"
                   >Nova</span
-                >
+                > -->
+                <h1 class="text-[20px] font-semibold text-white">logo</h1>
               </div>
-              <button
-                class="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/80 transition hover:bg-white/10"
-              >
-                English
-              </button>
             </div>
 
             <div class="mb-8">
-              <p
-                class="mb-2 text-sm font-medium uppercase tracking-[0.22em] text-[#A7A0C4]"
-              >
-                WELCOME
+              <p class="font-semibold text-white text-[32px]">
+                Welcome to ExploreMe 👋
               </p>
-              <h1 class="text-4xl font-bold tracking-tight text-white">
-                Create account
+              <h1 class="text-lg font-normal text-white/50">
+                Kindly fill in your details below to create an account
               </h1>
             </div>
 
@@ -60,42 +48,42 @@
               <div>
                 <label
                   for="name"
-                  class="mb-2 block text-sm font-medium text-white/80"
+                  class="mb-2 block text-sm font-medium text-white/70"
                   >Full name</label
                 >
                 <input
                   id="name"
                   type="text"
                   placeholder="Enter your name"
-                  class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-base text-white placeholder:text-white/35 outline-none transition focus:border-[#7A5AF8] focus:ring-2 focus:ring-[#7A5AF8]/30"
+                  class="w-full rounded-2xl border border-white/40 bg-white/5 px-4 py-3.5 text-base text-white placeholder:text-white/35 outline-none transition focus:border-[#7A5AF8] focus:ring-2 focus:ring-[#7A5AF8]/30"
                 />
               </div>
 
               <div>
                 <label
                   for="email"
-                  class="mb-2 block text-sm font-medium text-white/80"
-                  >Email</label
+                  class="mb-2 block text-sm font-medium text-white/70"
+                  >Email Address*</label
                 >
                 <input
                   id="email"
                   type="email"
                   placeholder="name@example.com"
-                  class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-base text-white placeholder:text-white/35 outline-none transition focus:border-[#7A5AF8] focus:ring-2 focus:ring-[#7A5AF8]/30"
+                  class="w-full rounded-2xl border border-white/40 bg-white/5 px-4 py-3.5 text-base text-white placeholder:text-white/35 outline-none transition focus:border-[#7A5AF8] focus:ring-2 focus:ring-[#7A5AF8]/30"
                 />
               </div>
 
               <div>
                 <label
                   for="password"
-                  class="mb-2 block text-sm font-medium text-white/80"
-                  >Password</label
+                  class="mb-2 block text-sm font-medium text-white/70"
+                  >Select your Skills</label
                 >
                 <input
                   id="password"
                   type="password"
                   placeholder="••••••••••"
-                  class="w-full rounded-2xl border border-white/10 bg-white/5 px-4 py-3.5 text-base text-white placeholder:text-white/35 outline-none transition focus:border-[#7A5AF8] focus:ring-2 focus:ring-[#7A5AF8]/30"
+                  class="w-full rounded-2xl border border-white/40 bg-white/5 px-4 py-3.5 text-base text-white placeholder:text-white/35 outline-none transition focus:border-[#7A5AF8] focus:ring-2 focus:ring-[#7A5AF8]/30"
                 />
               </div>
 
@@ -103,70 +91,60 @@
                 <label class="flex items-center gap-2 text-white/70">
                   <input
                     type="checkbox"
-                    class="h-4 w-4 rounded border-white/20 bg-white/5 accent-[#7A5AF8]"
+                    class="h-4 w-4 rounded border-white/40 bg-white/5 accent-[#7A5AF8]"
                   />
-                  Remember me
+                  I agree to terms & conditions
                 </label>
-                <a href="#" class="text-[#7A5AF8] hover:text-[#9b7cff]"
-                  >Forgot password?</a
-                >
               </div>
 
               <button
                 type="submit"
-                class="mt-2 w-full rounded-2xl bg-[#7A5AF8] px-4 py-3.5 text-base font-semibold text-white shadow-[0_18px_30px_rgba(122,90,248,0.45)] transition hover:bg-[#6b4ce5]"
+                class="mt-2 w-full rounded-2xl bg-[#7A5AF8] px-4 py-3.5 font-semibold text-white hover:bg-[#6b4ce5]"
               >
-                Sign up
+                Register Account
               </button>
             </form>
 
             <div class="mt-7 flex items-center gap-4 text-sm text-white/50">
               <div class="h-px flex-1 bg-white/10"></div>
-              <span>or continue with</span>
+              <span>or</span>
               <div class="h-px flex-1 bg-white/10"></div>
             </div>
 
             <div class="mt-6 flex gap-3">
               <button
-                class="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white/80 transition hover:bg-white/10"
+                class="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-white/10 bg-[#100F14] px-4 py-3 text-sm font-medium text-white/80 transition hover:bg-white/10"
               >
-                <span class="text-base">G</span>
+                <span class="text-base"
+                  ><img src="icons/google.svg" alt="Google" class="h-5 w-5" />
+                </span>
                 Google
               </button>
-              <button
+              <!-- <button
                 class="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white/80 transition hover:bg-white/10"
               >
-                <span class="text-base">f</span>
-                Facebook
-              </button>
+                <i class="fa-brands fa-facebook"></i>
+              </button> -->
             </div>
 
             <p class="mt-7 text-center text-sm text-white/60">
               Already have an account?
               <a
                 href="#"
-                class="ml-1 font-semibold text-[#7A5AF8] hover:text-[#9b7cff]"
-                >Sign in</a
+                class="ml-1 font-semibold text-white hover:text-[#9b7cff]"
+                >login</a
               >
             </p>
           </div>
         </div>
 
-        <div
-          class="relative lg:w-[58%] min-h-[420px] overflow-hidden bg-[radial-gradient(circle_at_center,_rgba(255,255,255,0.08),_rgba(12,10,18,0.2)_35%,_rgba(10,10,17,0.8)_100%)]"
-        >
-          <div
-            class="absolute inset-0 bg-[linear-gradient(90deg,#e7ca8c_0%,#d8b1a2_30%,#7f78db_100%)] opacity-95"
-          ></div>
-          <div
-            class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1),transparent_35%)]"
-          ></div>
+        <div class="hidden lg:block relative lg:w-[1200px] min-h-[840px]">
           <img
             src="image/signup1.jpg"
-            alt="Decorative sign-up illustration"
-            class="absolute inset-0 h-full w-full object-cover opacity-100"
+            alt=" sign-up "
+            class="absolute inset-0 h-full w-[100%] object-cover opacity-100"
           />
-          <div class="absolute inset-x-0 bottom-0 h-36"></div>
+          <!-- <div class="absolute inset-x-0 bottom-0 h-36"></div> -->
         </div>
       </div>
     </div>
