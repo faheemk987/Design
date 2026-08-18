@@ -3,8 +3,150 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <title>Sign Up</title>
   </head>
-  <body></body>
+  <body
+    class="bg-[#19181F] text-white min-h-screen flex items-center justify-center p-4 sm:p-8"
+  >
+    <div class="w-full overflow-hidden rounded-[30px]">
+      <div class="flex flex-col lg:flex-row gap-[200px]">
+        <div
+          class="flex w-full items-center justify-center px-6 py-10 sm:px-10 lg:w-[60%] lg:px-12"
+        >
+          <div class="w-full max-w-md">
+            <div class="mb-8 flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <img src="icons/logo.svg" alt="logo" class="h-10 w-10" />
+
+                <!-- <div
+                  class="flex h-10 w-10 items-center justify-center rounded-full bg-[#7A5AF8] text-lg font-bold text-white shadow-[0_8px_20px_rgba(122,90,248,0.5)]"
+                >
+                  N
+                </div>
+                <span class="text-lg font-semibold tracking-wide text-white/90"
+                  >Nova</span
+                > -->
+                <h1 class="text-[20px] font-semibold text-white">logo</h1>
+              </div>
+            </div>
+
+            <div class="mb-8">
+              <p class="font-semibold text-white text-[32px]">
+                Welcome to ExploreMe 👋
+              </p>
+              <h1 class="text-lg font-normal text-white/50">
+                Kindly fill in your details below to create an account
+              </h1>
+            </div>
+
+            <form class="space-y-5">
+              <div>
+                <label
+                  for="name"
+                  class="mb-2 block text-sm font-medium text-white/70"
+                  >Full name</label
+                >
+                <input
+                  id="name"
+                  type="text"
+                  placeholder="Enter your name"
+                  class="w-full rounded-2xl border border-white/40 bg-white/5 px-4 py-3.5 text-base text-white placeholder:text-white/35 outline-none transition focus:border-[#7A5AF8] focus:ring-2 focus:ring-[#7A5AF8]/30"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="mb-2 block text-sm font-medium text-white/70"
+                  >Email Address*</label
+                >
+                <input
+                  id="email"
+                  type="email"
+                  placeholder="name@example.com"
+                  class="w-full rounded-2xl border border-white/40 bg-white/5 px-4 py-3.5 text-base text-white placeholder:text-white/35 outline-none transition focus:border-[#7A5AF8] focus:ring-2 focus:ring-[#7A5AF8]/30"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="password"
+                  class="mb-2 block text-sm font-medium text-white/70"
+                  >Select your Skills</label
+                >
+                <input
+                  id="password"
+                  type="password"
+                  placeholder="••••••••••"
+                  class="w-full rounded-2xl border border-white/40 bg-white/5 px-4 py-3.5 text-base text-white placeholder:text-white/35 outline-none transition focus:border-[#7A5AF8] focus:ring-2 focus:ring-[#7A5AF8]/30"
+                />
+              </div>
+
+              <div class="flex items-center justify-between text-sm">
+                <label class="flex items-center gap-2 text-white/70">
+                  <input
+                    type="checkbox"
+                    class="h-4 w-4 rounded border-white/40 bg-white/5 accent-[#7A5AF8]"
+                  />
+                  I agree to terms & conditions
+                </label>
+              </div>
+
+              <button
+                type="submit"
+                class="mt-2 w-full rounded-2xl bg-[#7A5AF8] px-4 py-3.5 font-semibold text-white hover:bg-[#6b4ce5]"
+              >
+                Register Account
+              </button>
+            </form>
+
+            <div class="mt-7 flex items-center gap-4 text-sm text-white/50">
+              <div class="h-px flex-1 bg-white/10"></div>
+              <span>or</span>
+              <div class="h-px flex-1 bg-white/10"></div>
+            </div>
+
+            <div class="mt-6 flex gap-3">
+              <button
+                class="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-white/10 bg-[#100F14] px-4 py-3 text-sm font-medium text-white/80 transition hover:bg-white/10"
+              >
+                <span class="text-base"
+                  ><img src="icons/google.svg" alt="Google" class="h-5 w-5" />
+                </span>
+                Google
+              </button>
+              <!-- <button
+                class="flex flex-1 items-center justify-center gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm font-medium text-white/80 transition hover:bg-white/10"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </button> -->
+            </div>
+
+            <p class="mt-7 text-center text-sm text-white/60">
+              Already have an account?
+              <a
+                href="#"
+                class="ml-1 font-semibold text-white hover:text-[#9b7cff]"
+                >login</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="hidden lg:block relative lg:w-[1200px] min-h-[840px]">
+          <img
+            src="image/signup1.jpg"
+            alt=" sign-up "
+            class="absolute inset-0 h-full w-[100%] object-cover opacity-100"
+          />
+          <!-- <div class="absolute inset-x-0 bottom-0 h-36"></div> -->
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
