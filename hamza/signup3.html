@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Create your account</title>
+  </head>
+  <body class="min-h-screen bg-[#19181F] text-white">
+    <main class="flex min-h-screen w-full flex-col lg:flex-row">
+      <section
+        class=" flex w-full items-center justify-center px-6 py-10 sm:px-10 lg:order-2 lg:w-[50%] lg:px-16 xl:px-24"
+      >
+        <div class="w-full max-w-[430px]">
+          <header class="mb-12 flex items-center gap-3">
+            <img src="icons/logo.svg" alt="Logo" class="h-10 w-[30px]" />
+            <span class="text-xl font-semibold ">logo</span>
+          </header>
+
+          <div class="mb-8">
+            <h1 class="text-3xl font-semibold sm:text-[34px]">
+              Welcome to ExploreMe 👋
+            </h1>
+            <p class="mt-3 text-white/50">
+              Kindly fill in your details below to create an account
+            </p>
+          </div>
+
+          <form class="space-y-5" action="#" method="post">
+            <div>
+              <label
+                for="name"
+                class="mb-2 block text-sm font-medium text-white/75"
+                >Full name</label
+              >
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Enter your name"
+                class="h-14 w-full rounded-2xl border border-white/15 bg-white/[0.04] px-4  text-white outline-none  placeholder:text-white/30 focus:border-[#7A5AF8] "
+              />
+            </div>
+
+            <div>
+              <label
+                for="email"
+                class="mb-2 block text-sm font-medium text-white/75"
+                >Email address</label
+              >
+              <input
+                id="email"
+                name="email"
+                type="email"
+            
+                placeholder="name@example.com"
+                class="h-14 w-full rounded-2xl border border-white/15 bg-white/[0.04] px-4  text-white outline-none  placeholder:text-white/30 focus:border-[#7A5AF8] "
+              />
+            </div>
+
+            <div>
+              <label
+                for="password"
+                class="mb-2 block text-sm font-medium text-white/75"
+                >Select your Skills</label
+              >
+              <input
+                id="password"
+                name="password"
+                type="password"
+                
+                placeholder="Create a password"
+                class="h-14 w-full rounded-2xl border border-white/15 bg-white/[0.04] px-4  text-white outline-none  placeholder:text-white/30 focus:border-[#7A5AF8] "
+              />
+            </div>
+
+            <label
+              class="flex items-start gap-3 pt-1 text-sm  text-white/55"
+            >
+              <input
+                type="checkbox"
+                name="terms"
+                class="mt-0.5 h-4 w-4  rounded border-white/25 bg-white/5 ]"
+              />
+              <span
+                >I agree to terms & conditions
+            </label>
+
+            <button
+              type="submit"
+              class="h-14 w-full rounded-2xl bg-[#7A5AF8] px-4  font-semibold text-white hover:bg-[#6948e8] focus:outline-none"
+            >
+              Register Account
+            </button>
+          </form>
+
+          <div class="my-7 flex items-center gap-4 text-sm text-white/35">
+            <span class="h-px flex-1 bg-white/10"></span>
+            <span>or</span>
+            <span class="h-px flex-1 bg-white/10"></span>
+          </div>
+
+          <button
+            type="button"
+            class="flex h-14 w-full items-center justify-center gap-3 rounded-2xl border border-white/15 bg-white/[0.04] text-sm font-medium text-white/80  hover:bg-white/[0.08]"
+          >
+            <img src="icons/google.svg" alt="" class="h-5 w-5" />
+            Continue with Google
+          </button>
+
+          <p class="mt-7 text-center text-sm text-white/50">
+            Already have an account?
+            <a
+              href="#"
+              class="ml-1 font-semibold text-white  hover:text-[#9b87ff]"
+              >Login</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section
+        class="hidden min-h-screen w-[50%] p-5  lg:block">
+        <img
+          src="image/signup3.jpg"
+          alt="network"
+          class="h-[900px] w-full rounded-r-[22px]"
+        />
+      </section>
+    </main>
+  </body>
+</html>
