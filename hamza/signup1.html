@@ -70,12 +70,33 @@
                   class="mb-2 block text-sm font-medium text-white/70"
                   >Select your Skills</label
                 >
-                <input
+                <select
+                  name="select-skills"
+                  id="select-skills"
+                  class="h-14 w-full rounded-2xl border border-white/15 bg-white/[0.04] px-4 text-white outline-none placeholder:text-white/30 focus:border-[#7A5AF8]"
+                >
+                  <option value="" class="text-black">
+                    Select your skills
+                  </option>
+                  <option value="web" class="text-black">
+                    web development
+                  </option>
+                  <option value="app" class="text-black">
+                    mobile development
+                  </option>
+                  <option value="designs" class="text-black">
+                    ui/ux design
+                  </option>
+                  <option value="management" class="text-black">
+                    project management
+                  </option>
+                </select>
+                <!-- <input
                   id="password"
                   type="password"
                   placeholder="••••••••••"
                   class="w-full rounded-2xl border border-white/40 bg-white/5 px-4 py-3.5 text-base text-white placeholder:text-white/35 outline-none transition focus:border-[#7A5AF8] focus:ring-2 focus:ring-[#7A5AF8]/30"
-                />
+                /> -->
               </div>
 
               <div class="flex items-center justify-between text-sm">
