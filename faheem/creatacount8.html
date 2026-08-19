@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to FreelanceHu - Register</title>
+    <!-- Pure Standard Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white min-h-screen w-full flex items-stretch overflow-x-hidden antialiased">
+
+    <!-- Main Outer Wrapper Box (Spans full viewport height and width) -->
+    <div class="w-full flex flex-col lg:flex-row overflow-visible min-h-screen">
+        
+        <!-- Left Side: Registration Form -->
+        <div class="w-full lg:w-[52%] p-8 sm:p-12 lg:p-16 flex flex-col justify-between z-10 bg-white">
+            
+            <!-- Logo Section -->
+            <div class="flex items-center gap-3 mb-8 lg:mb-0">
+                <div class="flex items-center justify-center overflow-hidden">
+                    <!-- Geometric logo shape placeholder using pure tailwind -->
+                    <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M37 37L37 18.5C37 8.28274 28.7173 1.41726e-05 18.5 1.28328e-05C8.28274 1.1493e-05 1.13952e-05 8.28274 1.00554e-05 18.5L7.62939e-06 37L37 37Z"
+                            fill="#6938EF" />
+                        <path
+                            d="M7.78921 37C7.78921 30.9055 12.7298 25.9649 18.8243 25.9649C24.9188 25.9649 29.8594 30.9055 29.8594 37L7.78921 37Z"
+                            fill="#F0276C" />
+                        <path
+                            d="M7.78921 37C7.78921 43.0945 12.7298 48.0351 18.8243 48.0351C24.9188 48.0351 29.8594 43.0945 29.8594 37L7.78921 37Z"
+                            fill="#EDB500" />
+                        <path
+                            d="M18.5 22.0702C21.5473 22.0702 24.0176 19.5999 24.0176 16.5526C24.0176 13.5054 21.5473 11.0351 18.5 11.0351C15.4528 11.0351 12.9825 13.5054 12.9825 16.5526C12.9825 19.5999 15.4528 22.0702 18.5 22.0702Z"
+                            fill="#FAFAFF" />
+                    </svg>
+                </div>
+                <span class="text-xl font-bold text-gray-900 tracking-tight">Logo</span>
+            </div>
+
+            <!-- Form Content Header -->
+            <div class="my-auto py-6 max-w-md w-full mx-auto lg:mx-0">
+                <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 flex items-center gap-2 mb-2">
+                    Welcome to FreelanceHu
+                    <span class="inline-block animate-bounce">👋</span>
+                </h1>
+                <p class="text-gray-500 text-sm mb-8">Kindly fill in your details below to create an account</p>
+
+                <!-- Input Fields Form -->
+                <form onsubmit="event.preventDefault();" class="space-y-5">
+                    <!-- Email Address -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-1.5" for="email">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-600/20 focus:border-indigo-600 transition-all duration-200 placeholder-gray-300"
+                            placeholder="Enter your email address"
+                        >
+                    </div>
+
+                    <!-- Password -->
+                    <div>
+                        <label class="block text-sm font-medium text-gray-400 mb-1.5" for="password">Password</label>
+                        <div class="relative">
+                            <input 
+                                type="password" 
+                                id="password" 
+                                class="w-full px-4 py-3 rounded-xl border border-gray-200 text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-600/20 focus:border-indigo-600 transition-all duration-200"
+                            >
+                            <!-- Visibility Toggle Eye Slash Icon -->
+                            <button type="button" class="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 focus:outline-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3.5 px-4 rounded-xl shadow-lg shadow-indigo-600/20 transition-all duration-200 transform active:scale-[0.99] mt-2">
+                        Register with us
+                    </button>
+                </form>
+
+                <!-- Login Redirect Link -->
+                <div class="text-center mt-6">
+                    <p class="text-sm text-gray-500">
+                        Already have an account? 
+                        <a href="#" class="text-indigo-600 font-semibold hover:underline">Login</a>
+                    </p>
+                </div>
+
+                <!-- Divider Section -->
+                <div class="relative flex py-5 items-center">
+                    <div class="flex-grow border-t border-gray-200"></div>
+                    <span class="flex-shrink mx-4 text-gray-400 text-sm font-medium">Or</span>
+                    <div class="flex-grow border-t border-gray-200"></div>
+                </div>
+
+                <!-- Social Authentication Buttons -->
+                <div class="flex items-center justify-center gap-4">
+                    <!-- Google -->
+                    <button class="w-11 h-11 flex items-center justify-center rounded-xl bg-white border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24">
+                            <path fill="#EA4335" d="M12.24 10.285V14.4h6.887c-.648 2.41-2.519 4.114-5.136 4.114A5.78 5.78 0 0 1 8.2 12.725a5.78 5.78 0 0 1 5.79-5.789c1.464 0 2.802.535 3.84 1.417l3.053-3.053C19.045 3.61 16.63 2.65 13.99 2.65c-5.464 0-9.89 4.426-9.89 9.89s4.426 9.89 9.89 9.89c5.684 0 9.444-3.997 9.444-9.614 0-.616-.055-1.22-.164-1.817H12.24Z"/>
+                        </svg>
+                    </button>
+                    <!-- Apple -->
+                    <button class="w-11 h-11 flex items-center justify-center rounded-xl bg-white border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.17c.66-.81 1.11-1.93.99-3.06-1 .04-2.21.67-2.93 1.49-.62.69-1.16 1.84-1.01 2.96 1.12.09 2.27-.57 2.95-1.39z"/>
+                        </svg>
+                    </button>
+                    <!-- Facebook -->
+                    <button class="w-11 h-11 flex items-center justify-center rounded-xl bg-white border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors">
+                        <svg class="w-5 h-5 text-[#1877F2]" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </button>
+                    <!-- Twitter / X -->
+                    <button class="w-11 h-11 flex items-center justify-center rounded-xl bg-white border border-gray-200 shadow-sm hover:bg-gray-50 transition-colors">
+                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Empty Footer space to balance vertical distribution -->
+            <div class="hidden lg:block"></div>
+        </div>
+
+        <!-- Right Side: Graphic Card Panel with Overlapping Layout -->
+        <div class="w-full lg:flex-1 bg-gradient-to-br from-indigo-600 to-purple-900 lg:rounded-l-[40px] p-8 sm:p-12 lg:p-16 flex flex-col justify-between text-white min-h-[450px] lg:min-h-screen lg:-ml-12 shadow-2xl z-20 relative overflow-hidden">
+            
+            <!-- Background Image -->
+            <img src="/faheem/icon/background2.svg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-50 pointer-events-none">
+            
+            <!-- Abstract background graphic layers using standard Tailwind inline utilities -->
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(99,91,255,0.4),transparent_70%)] pointer-events-none -rotate-12 scale-150"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(79,70,229,0.5),transparent_60%)] pointer-events-none rotate-12 scale-125"></div>
+
+            <!-- This empty div acts as a top spacer for flex layout distribution -->
+            <div class="hidden lg:block"></div>
+
+            <!-- Center Feature Block (Now strictly centered via my-auto on flex container) -->
+            <div class="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/10 my-auto z-10 max-w-md mx-auto w-full shadow-inner">
+                <h2 class="text-3xl sm:text-4xl font-bold leading-tight mb-4 tracking-tight">
+                    Connecting Talent to Opportunities
+                </h2>
+                <p class="text-white/80 text-sm leading-relaxed font-light">
+                    Discover endless opportunities on FreelanceHu, where talented freelancers and businesses unite. Jump right in with us!
+                </p>
+            </div>
+
+            <!-- Footer Text & Slider Navigation Indicators -->
+            <div class="mt-8 lg:mt-0 z-10 text-center w-full flex flex-col items-center justify-center">
+                <p class="text-white/90 text-sm font-medium mb-6">
+                    Upload samples of your work to impress potential clients
+                </p>
+                
+                <!-- Pagination Dots & Arrow Navs (With added horizontal gaps for arrows) -->
+                <div class="flex items-center justify-center gap-12 text-white/50 w-full">
+                    <button class="hover:text-white transition-colors text-sm font-bold">&lt;</button>
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-white"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-white/40"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-white/40"></span>
+                        <span class="w-1.5 h-1.5 rounded-full bg-white/40"></span>
+                    </div>
+                    <button class="hover:text-white transition-colors text-sm font-bold">&gt;</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
