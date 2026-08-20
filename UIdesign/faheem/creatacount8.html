@@ -9,16 +9,12 @@
 </head>
 <body class="bg-white min-h-screen w-full flex items-stretch overflow-x-hidden antialiased">
 
-    <!-- Main Outer Wrapper Box (Spans full viewport height and width) -->
     <div class="w-full flex flex-col lg:flex-row overflow-visible min-h-screen">
-        
-        <!-- Left Side: Registration Form -->
         <div class="w-full lg:w-[52%] p-8 sm:p-12 lg:p-16 flex flex-col justify-between z-10 bg-white">
             
             <!-- Logo Section -->
             <div class="flex items-center gap-3 mb-8 lg:mb-0">
                 <div class="flex items-center justify-center overflow-hidden">
-                    <!-- Geometric logo shape placeholder using pure tailwind -->
                     <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M37 37L37 18.5C37 8.28274 28.7173 1.41726e-05 18.5 1.28328e-05C8.28274 1.1493e-05 1.13952e-05 8.28274 1.00554e-05 18.5L7.62939e-06 37L37 37Z"
@@ -37,7 +33,6 @@
                 <span class="text-xl font-bold text-gray-900 tracking-tight">Logo</span>
             </div>
 
-            <!-- Form Content Header -->
             <div class="my-auto py-6 max-w-md w-full mx-auto lg:mx-0">
                 <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 flex items-center gap-2 mb-2">
                     Welcome to FreelanceHu
@@ -46,7 +41,7 @@
                 <p class="text-gray-500 text-sm mb-8">Kindly fill in your details below to create an account</p>
 
                 <!-- Input Fields Form -->
-                <form onsubmit="event.preventDefault();" class="space-y-5">
+                <form  class="space-y-5">
                     <!-- Email Address -->
                     <div>
                         <label class="block text-sm font-medium text-gray-400 mb-1.5" for="email">Email Address</label>
@@ -64,7 +59,6 @@
                         </div>
                     </div>
 
-                    <!-- Password -->
                     <div>
                         <label class="block text-sm font-medium text-gray-400 mb-1.5" for="password">Password</label>
                         <div class="relative">
@@ -91,7 +85,6 @@
                     </button>
                 </form>
 
-                <!-- Login Redirect Link -->
                 <div class="text-center mt-6">
                     <p class="text-sm text-gray-500">
                         Already have an account? 
@@ -106,7 +99,6 @@
                     <div class="flex-grow border-t border-gray-200"></div>
                 </div>
 
-                <!-- Social Authentication Buttons -->
                 <div class="flex items-center justify-center gap-9">
                   
                        <img src="./icon/google.svg" alt="Google Icon" class="mt-1 h-6 w-6">
@@ -124,21 +116,18 @@
                 </div>
             </div>
 
-            <!-- Empty Footer space to balance vertical distribution -->
             <div class="hidden lg:block"></div>
         </div>
-
-        <!-- Right Side: Graphic Card Panel with Overlapping Layout -->
+        
         <div class="w-full lg:flex-1 bg-gradient-to-br from-indigo-600 to-purple-900 lg:rounded-l-[40px] p-8 sm:p-12 lg:p-16 flex flex-col justify-between text-white min-h-[450px] lg:min-h-screen lg:-ml-12 shadow-2xl z-20 relative overflow-hidden">
             
             <!-- Background Image -->
-            <img src="./icon/background2.svg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-50 pointer-events-none">
+            <img src="/UIdesign/faheem/icon/background2.svg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-50 pointer-events-none">
             
             <!-- Abstract background graphic layers using standard Tailwind inline utilities -->
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(99,91,255,0.4),transparent_70%)] pointer-events-none -rotate-12 scale-150"></div>
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(79,70,229,0.5),transparent_60%)] pointer-events-none rotate-12 scale-125"></div>
 
-            <!-- This empty div acts as a top spacer for flex layout distribution -->
             <div class="hidden lg:block"></div>
 
             <!-- Center Feature Block (Now strictly centered via my-auto on flex container) -->
@@ -150,8 +139,7 @@
                     Discover endless opportunities on FreelanceHu, where talented freelancers and businesses unite. Jump right in with us!
                 </p>
             </div>
-
-            <!-- Footer Text & Slider Navigation Indicators -->
+                <!-- footer  -->
             <div class="mt-8 lg:mt-0 z-10 text-center w-full flex flex-col items-center justify-center">
                 <p class="text-white/90 text-sm font-medium mb-6">
                     Upload samples of your work to impress potential clients
