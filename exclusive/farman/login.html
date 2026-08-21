@@ -5,24 +5,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .second-div {
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <div class="header"></div>
+    <div id="header"></div>
 
 
     <script>
-        fetch('../Abdullah/')
-            .then(response => response.json())
+        fetch('../Abdullah/header.html')
+            .then(response => response.text())
             .then(data => {
-                const ipAddress = data.ip;
-                console.log('IP Address:', ipAddress);
-                // You can use the IP address as needed
+                document.getElementById('header').innerHTML = data;
             })
             .catch(error => {
                 console.error('Error fetching IP address:', error);
             });
     </script>
+    <!-- Main Content Area -->
+    <main class="flex-grow flex items-center my-12">
+        <div class="max-w-7xl w-full mx-auto grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+
+            <!-- Left Banner / Image Container -->
+            <div
+                class="md:col-span-7 bg-[#CBE4E8] flex justify-center items-center rounded-r-lg overflow-hidden h-[500px]">
+                <img src="../farman/imgs/sideimg.jpg" alt="Shopping Cart and Mobile" class="object-cover h-full w-full">
+            </div>
+
+            <!-- Right Form Container -->
+            <div class="md:col-span-5 px-6 md:px-12 flex flex-col justify-center max-w-md mx-auto w-full">
+                <h1 class="text-3xl font-medium tracking-wide mb-2">Log in to Exclusive</h1>
+                <p class="text-sm text-gray-600 mb-8">Enter your details below</p>
+
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Email or Phone Number"
+                            class="w-full border-b border-gray-300 py-2 text-sm focus:outline-none focus:border-black transition">
+                    </div>
+                    <div>
+                        <input type="password" placeholder="Password"
+                            class="w-full border-b border-gray-300 py-2 text-sm focus:outline-none focus:border-black transition">
+                    </div>
+
+                    <div class="pt-4 flex items-center justify-between">
+                        <button type="submit"
+                            class="bg-[#DB4444] text-white px-12 py-3 rounded font-medium hover:bg-red-600 transition shadow">
+                            Log In
+                        </button>
+                        <a href="#" class="text-sm text-[#DB4444] hover:underline">Forget Password?</a>
+                    </div>
+
+                    <div class="pt-2">
+                        <button type="button"
+                            class="w-full border border-gray-300 py-3 rounded font-medium flex items-center justify-center space-x-2 hover:bg-gray-50 transition text-sm">
+                            <i class="fa-brands fa-google text-base"></i>
+                            <span>Log in with Google</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="mt-8 text-center text-sm text-gray-600">
+                    Don't have an account?
+                    <a href="#"
+                        class="text-black font-semibold border-b border-black ml-2 pb-0.5 hover:text-gray-700">Sign
+                        up</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-16 pb-6 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-5 gap-8 mb-12">
+
+            <!-- Col 1: Exclusive / Subscribe -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-bold">Exclusive</h3>
+                <h4 class="font-medium text-base">Subscribe</h4>
+                <p class="text-xs text-gray-300">Get 10% off your first order</p>
+                <div class="relative w-full max-w-xs">
+                    <input type="email" placeholder="Enter your email"
+                        class="w-full bg-transparent border border-white rounded py-2 pl-3 pr-10 text-xs focus:outline-none placeholder-gray-500">
+                    <button class="absolute right-3 top-2.5 text-white">
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Col 2: Support -->
+            <div class="space-y-3">
+                <h3 class="text-base font-semibold">Support</h3>
+                <p class="text-xs text-gray-300 leading-relaxed">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                <p class="text-xs text-gray-300">exclusive@gmail.com</p>
+                <p class="text-xs text-gray-300">+88015-88888-9999</p>
+            </div>
+
+            <!-- Col 3: Account -->
+            <div class="space-y-3">
+                <h3 class="text-base font-semibold">Account</h3>
+                <ul class="space-y-2 text-xs text-gray-300">
+                    <li><a href="#" class="hover:underline">My Account</a></li>
+                    <li><a href="#" class="hover:underline">Login / Register</a></li>
+                    <li><a href="#" class="hover:underline">Cart</a></li>
+                    <li><a href="#" class="hover:underline">Wishlist</a></li>
+                    <li><a href="#" class="hover:underline">Shop</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Quick Link -->
+            <div class="space-y-3">
+                <h3 class="text-base font-semibold">Quick Link</h3>
+                <ul class="space-y-2 text-xs text-gray-300">
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms Of Use</a></li>
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5: Download App -->
+            <div class="space-y-3">
+                <h3 class="text-base font-semibold">Download App</h3>
+                <p class="text-[10px] text-gray-400 font-medium">Save $3 with App New User Only</p>
+
+                <div class="flex items-center space-x-2">
+                    <!-- Placeholder QR Code -->
+                    <div class="bg-white p-1 rounded">
+                        <div
+                            class="w-16 h-16 bg-black flex items-center justify-center text-[8px] text-white text-center">
+                            QR CODE
+                        </div>
+                    </div>
+                    <!-- App Store Badges Placeholder -->
+                    <div class="flex flex-col space-y-2">
+                        <a href="#"
+                            class="bg-gray-800 text-white text-[9px] px-3 py-1.5 rounded flex items-center space-x-1 border border-gray-600">
+                            <i class="fa-brands fa-[#google-play] text-xs"></i>
+                            <span>Google Play</span>
+                        </a>
+                        <a href="#"
+                            class="bg-gray-800 text-white text-[9px] px-3 py-1.5 rounded flex items-center space-x-1 border border-gray-600">
+                            <i class="fa-brands fa-apple text-xs"></i>
+                            <span>App Store</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Social Icons -->
+                <div class="flex space-x-4 pt-2 text-base text-gray-300">
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-800 pt-4 text-center text-xs text-gray-500">
+            &copy; Copyright Rimel 2022. All right reserved
+        </div>
+    </footer>
+
+</body>
+
+</html>
 </body>
 
 </html>
