@@ -30,6 +30,277 @@
                 console.error('Error fetching IP address:', error);
             });
     </script>
+    <!-- Main Content Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-12 sm:space-y-20 flex-grow w-full">
+
+        <!-- Breadcrumb Nav -->
+        <nav class="text-xs text-gray-500 space-x-2">
+            <a href="#" class="hover:text-black">Home</a>
+            <span>/</span>
+            <span class="text-black font-medium">About</span>
+        </nav>
+
+        <!-- Section 1: Our Story -->
+        <section class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div class="space-y-4 sm:space-y-6 order-2 lg:order-1">
+                <h1 class="text-2xl sm:text-4xl font-semibold tracking-wide text-center lg:text-left">Our Story</h1>
+                <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                    Launched in 2015, Exclusive is South Asia's premier online shopping marketplace with an active
+                    presence in Bangladesh. Supported by wide range of tailored marketing, data and service solutions,
+                    Exclusive has 10,500 sellers and 300 brands and serves 3 millions customers across the region.
+                </p>
+                <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                    Exclusive has more than 1 Million products to offer, growing at a very fast rate. Exclusive offers a
+                    diverse assortment in categories ranging from consumer electronics to fashion items.
+                </p>
+            </div>
+            <div class="order-1 lg:order-2 bg-[#E73285] rounded-lg overflow-hidden h-64 sm:h-80 md:h-[400px] w-full">
+                <img src="../farman/imgs/frontimg.jpg" alt="Shopping Ladies" class="w-full h-full object-cover">
+            </div>
+        </section>
+
+        <!-- Section 2: Stat Cards -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+            <!-- Stat 1 -->
+            <div
+                class="border border-gray-300 rounded-lg p-5 text-center space-y-2 sm:space-y-3 hover:border-[#DB4444] transition group">
+                <div
+                    class="w-12 h-12 sm:w-14 sm:h-14 bg-gray-200 rounded-full flex items-center justify-center mx-auto border-4 border-gray-100 group-hover:bg-[#DB4444] group-hover:border-red-200 transition">
+                    <i class="fa-solid fa-store text-base sm:text-lg text-black group-hover:text-white transition"></i>
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold">10.5k</h2>
+                <p class="text-xs text-gray-600">Sellers active on our site</p>
+            </div>
+
+            <!-- Stat 2 (Featured) -->
+            <div class="bg-[#DB4444] text-white rounded-lg p-5 text-center space-y-2 sm:space-y-3 shadow-md">
+                <div
+                    class="w-12 h-12 sm:w-14 sm:h-14 bg-white/30 rounded-full flex items-center justify-center mx-auto border-4 border-white/20">
+                    <i class="fa-solid fa-sack-dollar text-base sm:text-lg text-white"></i>
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold">33k</h2>
+                <p class="text-xs text-white/90">Monthly Product Sale</p>
+            </div>
+
+            <!-- Stat 3 -->
+            <div
+                class="border border-gray-300 rounded-lg p-5 text-center space-y-2 sm:space-y-3 hover:border-[#DB4444] transition group">
+                <div
+                    class="w-12 h-12 sm:w-14 sm:h-14 bg-gray-200 rounded-full flex items-center justify-center mx-auto border-4 border-gray-100 group-hover:bg-[#DB4444] group-hover:border-red-200 transition">
+                    <i
+                        class="fa-solid fa-bag-shopping text-base sm:text-lg text-black group-hover:text-white transition"></i>
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold">45.5k</h2>
+                <p class="text-xs text-gray-600">Customer active on our site</p>
+            </div>
+
+            <!-- Stat 4 -->
+            <div
+                class="border border-gray-300 rounded-lg p-5 text-center space-y-2 sm:space-y-3 hover:border-[#DB4444] transition group">
+                <div
+                    class="w-12 h-12 sm:w-14 sm:h-14 bg-gray-200 rounded-full flex items-center justify-center mx-auto border-4 border-gray-100 group-hover:bg-[#DB4444] group-hover:border-red-200 transition">
+                    <i
+                        class="fa-solid fa-money-bill-trend-up text-base sm:text-lg text-black group-hover:text-white transition"></i>
+                </div>
+                <h2 class="text-xl sm:text-2xl font-bold">25k</h2>
+                <p class="text-xs text-gray-600">Annual gross sale in our site</p>
+            </div>
+        </section>
+
+        <!-- Section 3: Team Members -->
+        <section class="space-y-6 sm:space-y-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Member 1 -->
+                <div class="space-y-3">
+                    <div class="bg-gray-100 rounded pt-6 px-6 flex justify-center h-64 sm:h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80"
+                            alt="Tom Cruise" class="object-cover h-full rounded-t">
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="text-lg sm:text-xl font-semibold tracking-wide">Tom Cruise</h3>
+                        <p class="text-xs text-gray-600">Founder & Chairman</p>
+                        <div class="flex space-x-3 text-xs pt-1">
+                            <a href="#" class="text-gray-700 hover:text-black"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-black"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-black"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="space-y-3">
+                    <div class="bg-gray-100 rounded pt-6 px-6 flex justify-center h-64 sm:h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+                            alt="Emma Watson" class="object-cover h-full rounded-t">
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="text-lg sm:text-xl font-semibold tracking-wide">Emma Watson</h3>
+                        <p class="text-xs text-gray-600">Managing Director</p>
+                        <div class="flex space-x-3 text-xs pt-1">
+                            <a href="#" class="text-gray-700 hover:text-black"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-black"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-black"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="space-y-3 sm:col-span-2 md:col-span-1">
+                    <div class="bg-gray-100 rounded pt-6 px-6 flex justify-center h-64 sm:h-80 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=400&q=80"
+                            alt="Will Smith" class="object-cover h-full rounded-t">
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="text-lg sm:text-xl font-semibold tracking-wide">Will Smith</h3>
+                        <p class="text-xs text-gray-600">Product Designer</p>
+                        <div class="flex space-x-3 text-xs pt-1">
+                            <a href="#" class="text-gray-700 hover:text-black"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-black"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="text-gray-700 hover:text-black"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dots -->
+            <div class="flex justify-center space-x-2 pt-2">
+                <span class="w-2.5 h-2.5 bg-gray-300 rounded-full inline-block cursor-pointer"></span>
+                <span class="w-2.5 h-2.5 bg-gray-300 rounded-full inline-block cursor-pointer"></span>
+                <span
+                    class="w-2.5 h-2.5 bg-[#DB4444] rounded-full inline-block cursor-pointer ring-2 ring-[#DB4444] ring-offset-2"></span>
+                <span class="w-2.5 h-2.5 bg-gray-300 rounded-full inline-block cursor-pointer"></span>
+                <span class="w-2.5 h-2.5 bg-gray-300 rounded-full inline-block cursor-pointer"></span>
+            </div>
+        </section>
+
+        <!-- Section 4: Features -->
+        <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-center pt-4 pb-6">
+            <div class="space-y-2">
+                <div
+                    class="w-14 h-14 bg-gray-200 rounded-full flex items-center justify-center mx-auto border-4 border-gray-100">
+                    <i class="fa-solid fa-truck-fast text-lg text-black"></i>
+                </div>
+                <h4 class="font-bold text-xs sm:text-sm tracking-wide uppercase">FREE AND FAST DELIVERY</h4>
+                <p class="text-[11px] sm:text-xs text-gray-600">Free delivery for all orders over $140</p>
+            </div>
+
+            <div class="space-y-2">
+                <div
+                    class="w-14 h-14 bg-gray-200 rounded-full flex items-center justify-center mx-auto border-4 border-gray-100">
+                    <i class="fa-solid fa-headset text-lg text-black"></i>
+                </div>
+                <h4 class="font-bold text-xs sm:text-sm tracking-wide uppercase">24/7 CUSTOMER SERVICE</h4>
+                <p class="text-[11px] sm:text-xs text-gray-600">Friendly 24/7 customer support</p>
+            </div>
+
+            <div class="space-y-2 sm:col-span-2 md:col-span-1">
+                <div
+                    class="w-14 h-14 bg-gray-200 rounded-full flex items-center justify-center mx-auto border-4 border-gray-100">
+                    <i class="fa-solid fa-shield-halved text-lg text-black"></i>
+                </div>
+                <h4 class="font-bold text-xs sm:text-sm tracking-wide uppercase">MONEY BACK GUARANTEE</h4>
+                <p class="text-[11px] sm:text-xs text-gray-600">We return money within 30 days</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white pt-10 sm:pt-16 pb-6 text-xs sm:text-sm mt-12">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-8 sm:mb-12">
+
+            <!-- Col 1 -->
+            <div class="space-y-3">
+                <h3 class="text-base sm:text-lg font-bold">Exclusive</h3>
+                <h4 class="font-medium text-sm sm:text-base">Subscribe</h4>
+                <p class="text-xs text-gray-300">Get 10% off your first order</p>
+                <div class="relative w-full max-w-xs">
+                    <input type="email" placeholder="Enter your email"
+                        class="w-full bg-transparent border border-white rounded py-2 pl-3 pr-8 text-xs focus:outline-none placeholder-gray-500">
+                    <button class="absolute right-2.5 top-2 text-white">
+                        <i class="fa-regular fa-paper-plane text-xs"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Col 2 -->
+            <div class="space-y-2.5">
+                <h3 class="text-sm sm:text-base font-semibold">Support</h3>
+                <p class="text-xs text-gray-300 leading-relaxed">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+                <p class="text-xs text-gray-300">exclusive@gmail.com</p>
+                <p class="text-xs text-gray-300">+88015-88888-9999</p>
+            </div>
+
+            <!-- Col 3 -->
+            <div class="space-y-2.5">
+                <h3 class="text-sm sm:text-base font-semibold">Account</h3>
+                <ul class="space-y-1.5 text-xs text-gray-300">
+                    <li><a href="#" class="hover:underline">My Account</a></li>
+                    <li><a href="#" class="hover:underline">Login / Register</a></li>
+                    <li><a href="#" class="hover:underline">Cart</a></li>
+                    <li><a href="#" class="hover:underline">Wishlist</a></li>
+                    <li><a href="#" class="hover:underline">Shop</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4 -->
+            <div class="space-y-2.5">
+                <h3 class="text-sm sm:text-base font-semibold">Quick Link</h3>
+                <ul class="space-y-1.5 text-xs text-gray-300">
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms Of Use</a></li>
+                    <li><a href="#" class="hover:underline">FAQ</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 5 -->
+            <div class="space-y-3 sm:col-span-2 lg:col-span-1">
+                <h3 class="text-sm sm:text-base font-semibold">Download App</h3>
+                <p class="text-[10px] text-gray-400 font-medium">Save $3 with App New User Only</p>
+
+                <div class="flex items-center space-x-2">
+                    <div class="bg-white p-1 rounded">
+                        <div
+                            class="w-14 h-14 bg-black flex items-center justify-center text-[7px] text-white text-center">
+                            QR CODE
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-1.5">
+                        <a href="#"
+                            class="bg-gray-800 text-white text-[9px] px-2.5 py-1 rounded flex items-center space-x-1 border border-gray-600">
+                            <i class="fa-brands fa-google-play"></i>
+                            <span>Google Play</span>
+                        </a>
+                        <a href="#"
+                            class="bg-gray-800 text-white text-[9px] px-2.5 py-1 rounded flex items-center space-x-1 border border-gray-600">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>App Store</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex space-x-4 pt-1 text-sm text-gray-300">
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-800 pt-4 text-center text-[11px] text-gray-500">
+            &copy; Copyright Rimel 2022. All right reserved
+        </div>
+    </footer>
 </body>
 
 </html>
