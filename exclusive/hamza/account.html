@@ -33,7 +33,7 @@
       <div
         class="grid items-start gap-14 lg:grid-cols-[210px_minmax(0,1fr)] lg:gap-24"
       >
-        <aside aria-label="Account navigation" class="text-sm">
+        <div aria-label="Account navigation" class="text-sm">
           <div class="mb-7">
             <h2 class="mb-4 font-semibold text-[#082b52]">Manage My Account</h2>
             <nav class="space-y-3 pl-8 text-[#7d8790]">
@@ -58,32 +58,28 @@
             </nav>
           </div>
           <a href="#logout" class="pl-8 text-sm hover:text-[#DB4444]">Logout</a>
-        </aside>
+        </div>
 
-        <section
-          id="profile"
-          class="rounded border border-[#e4e7e9] p-6 sm:p-10"
-        >
+        <section class="rounded border border-[#e4e7e9] p-6 sm:p-10 space-y-18">
           <h2
-            class="mb-7 font-['Space_Grotesk'] text-xl font-medium text-[#DB4444]"
+            class="mb-3 font-['Space_Grotesk'] text-xl font-medium text-[#DB4444]"
           >
             Edit Your Profile
           </h2>
-          <form class="space-y-6">
+          <form class="space-y-4">
             <div class="grid gap-6 sm:grid-cols-2">
               <label class="block">
                 <span class="mb-2 block text-sm">First Name</span>
                 <input
                   type="text"
-                  value=""
-                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none focus:ring-2 focus:ring-[#DB4444]/30"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none"
                 />
               </label>
               <label class="block">
                 <span class="mb-2 block text-sm">Last Name</span>
                 <input
                   type="text"
-                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none focus:ring-2 focus:ring-[#DB4444]/30"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none"
                 />
               </label>
             </div>
@@ -92,14 +88,14 @@
                 <span class="mb-2 block text-sm">Email Address</span>
                 <input
                   type="email"
-                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none focus:ring-2 focus:ring-[#DB4444]/30"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none"
                 />
               </label>
               <label class="block">
                 <span class="mb-2 block text-sm">Address</span>
                 <input
                   type="text"
-                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none focus:ring-2 focus:ring-[#DB4444]/30"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none"
                 />
               </label>
             </div>
@@ -109,22 +105,22 @@
                 <input
                   type="password"
                   placeholder="Current Password"
-                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790] focus:ring-2 focus:ring-[#DB4444]/30"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790]"
                 />
                 <input
                   type="password"
                   placeholder="New Password"
-                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790] focus:ring-2 focus:ring-[#DB4444]/30"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790]"
                 />
                 <input
                   type="password"
                   placeholder="Confirm New Password"
-                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790] focus:ring-2 focus:ring-[#DB4444]/30"
+                  class="border border-[#c9cbcc] h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790]"
                 />
               </div>
             </div>
             <div
-              class="flex flex-col-reverse items-stretch justify-end gap-4 pt-2 sm:flex-row sm:items-center"
+              class="flex flex-col-reverse justify-end gap-4 pt-2 sm:flex-row sm:items-center"
             >
               <button
                 type="reset"
