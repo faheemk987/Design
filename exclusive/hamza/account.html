@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Account | Exclusive</title>
+  </head>
+  <body class="min-h-screen bg-white font-['DM_Sans'] text-[#171717]">
+    <main
+      class="mx-auto max-w-[1100px] px-5 pb-20 pt-10 sm:px-8 lg:px-10 lg:pt-16"
+    >
+      <div class="mb-16 text-sm text-[#7d8790]">
+        <a href="#" class="hover:text-[#171717]">Home</a>
+        <span class="mx-3 text-[#b6bdc4]">/</span>
+        <span class="text-[#171717]">My Account</span>
+      </div>
+
+      <div
+        class="mb-12 flex flex-col justify-between gap-3 sm:flex-row sm:items-center"
+      >
+        <h1
+          class="font-['Space_Grotesk'] text-3xl font-medium tracking-tight text-[#082b52] sm:text-4xl"
+        >
+          My Account
+        </h1>
+        <p class="text-sm">
+          Welcome! <span class="text-[#DB4444]">Md. Shakil</span>
+        </p>
+      </div>
+
+      <div
+        class="grid items-start gap-14 lg:grid-cols-[210px_minmax(0,1fr)] lg:gap-24"
+      >
+        <aside aria-label="Account navigation" class="text-sm">
+          <div class="mb-7">
+            <h2 class="mb-4 font-semibold text-[#082b52]">Manage My Account</h2>
+            <nav class="space-y-3 pl-8 text-[#7d8790]">
+              <a href="#profile" class="block text-[#DB4444]">My Profile</a>
+              <a href="#address" class="block hover:text-[#DB4444]"
+                >Address Book</a
+              >
+              <a href="#payment" class="block hover:text-[#DB4444]"
+                >My Payment Options</a
+              >
+            </nav>
+          </div>
+          <div class="mb-7">
+            <h2 class="mb-4 font-semibold text-[#082b52]">My Orders</h2>
+            <nav class="space-y-3 pl-8 text-[#7d8790]">
+              <a href="#orders" class="block hover:text-[#DB4444]"
+                >My Returns</a
+              >
+              <a href="#orders" class="block hover:text-[#DB4444]"
+                >My Cancellations</a
+              >
+            </nav>
+          </div>
+          <a href="#logout" class="pl-8 text-sm hover:text-[#DB4444]">Logout</a>
+        </aside>
+
+        <section
+          id="profile"
+          class="rounded border border-[#e4e7e9] p-6 sm:p-10"
+        >
+          <h2
+            class="mb-7 font-['Space_Grotesk'] text-xl font-medium text-[#DB4444]"
+          >
+            Edit Your Profile
+          </h2>
+          <form class="space-y-6">
+            <div class="grid gap-6 sm:grid-cols-2">
+              <label class="block">
+                <span class="mb-2 block text-sm">First Name</span>
+                <input
+                  type="text"
+                  value=""
+                  class="h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none focus:ring-2 focus:ring-[#DB4444]/30"
+                />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm">Last Name</span>
+                <input
+                  type="text"
+                  class="h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none focus:ring-2 focus:ring-[#DB4444]/30"
+                />
+              </label>
+            </div>
+            <div class="grid gap-6 sm:grid-cols-2">
+              <label class="block">
+                <span class="mb-2 block text-sm">Email Address</span>
+                <input
+                  type="email"
+                  class="h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none focus:ring-2 focus:ring-[#DB4444]/30"
+                />
+              </label>
+              <label class="block">
+                <span class="mb-2 block text-sm">Address</span>
+                <input
+                  type="text"
+                  value="Kingston, 5236, United States"
+                  class="h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none focus:ring-2 focus:ring-[#DB4444]/30"
+                />
+              </label>
+            </div>
+            <div>
+              <h3 class="mb-3 text-sm">Password Changes</h3>
+              <div class="space-y-4">
+                <input
+                  type="password"
+                  placeholder="Current Password"
+                  class="h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790] focus:ring-2 focus:ring-[#DB4444]/30"
+                />
+                <input
+                  type="password"
+                  placeholder="New Password"
+                  class="h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790] focus:ring-2 focus:ring-[#DB4444]/30"
+                />
+                <input
+                  type="password"
+                  placeholder="Confirm New Password"
+                  class="h-12 w-full rounded bg-[#f5f5f5] px-4 text-sm outline-none placeholder:text-[#7d8790] focus:ring-2 focus:ring-[#DB4444]/30"
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-col-reverse items-stretch justify-end gap-4 pt-2 sm:flex-row sm:items-center"
+            >
+              <button
+                type="reset"
+                class="px-7 py-3 text-sm hover:text-[#DB4444]"
+              >
+                Cancel
+              </button>
+              <button
+                type="submit"
+                class="rounded bg-[#DB4444] px-8 py-3 text-sm font-medium text-white transition hover:bg-[#b93636]"
+              >
+                Save Changes
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
