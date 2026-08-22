@@ -16,6 +16,18 @@
     .second-div {
       box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     }
+
+    #header select {
+      background-color: #000000;
+      color: #ffffff;
+      border: 0;
+      outline: none;
+    }
+
+    #header select option {
+      background-color: #ffffff;
+      color: #000000;
+    }
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
     integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
@@ -26,9 +38,9 @@
 <body class="bg-white min-h-screen flex flex-col">
   <div id="header"></div>
   <section class="flex-1 min-h-[900px] sm:min-h-[950px] pb-16 sm:pb-24">
-    <div class="max-w-7xl mx-auto w-full px-6 sm:px-10 py-6">
+    <div class="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-10 xl:px-16 py-5 sm:py-6">
 
-      <div class="text-sm mb-8 mt-7">
+      <div class="text-xs sm:text-sm mb-6 sm:mb-8 mt-5 sm:mt-7 overflow-hidden whitespace-nowrap text-ellipsis">
         <span class="text-gray-400">Account</span>
         <span class="text-gray-300 mx-2">/</span>
         <span class="text-gray-400">Gaming</span>
@@ -36,35 +48,35 @@
         <span class="text-gray-900">Havic HV G-92 Gamepad</span>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 xl:gap-16 items-start">
 
-        <div class="flex flex-col sm:flex-row gap-6">
-          <div class="  flex sm:flex-col gap-12 order-2 sm:order-1 ">
-            <div class="w-20 h-20 sm:w-24 sm:h-24 flex-none bg-gray-100 overflow-hidden">
+        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 min-w-0">
+          <div class="flex sm:flex-col gap-3 sm:gap-6 order-2 sm:order-1 justify-center sm:justify-start">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex-none bg-gray-100 overflow-hidden">
               <img src="/exclusive/Faheem/proimage/photo2.svg" alt="Thumbnail 1" class="">
             </div>
-            <div class="w-20 h-20 sm:w-24 sm:h-24 flex-none bg-gray-100 overflow-hidden">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex-none bg-gray-100 overflow-hidden">
               <img src="/exclusive/Faheem/proimage/photo3.svg" alt="Thumbnail 2" class="">
             </div>
-            <div class="w-20 h-20 sm:w-24 sm:h-24 flex-none bg-gray-100 overflow-hidden">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex-none bg-gray-100 overflow-hidden">
               <img src="/exclusive/Faheem/proimage/photo4.svg" alt="Thumbnail 3" class="">
             </div>
-            <div class="w-20 h-20 sm:w-24 sm:h-24 flex-none border-gray-200 bg-gray-100 overflow-hidden">
+            <div class="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 flex-none border-gray-200 bg-gray-100 overflow-hidden">
               <img src="/exclusive/Faheem/proimage/photo5.svg" alt="Thumbnail 4" class="">
             </div>
           </div>
 
           <div
-            class="order-1 sm:order-2 flex-1 w-full min-w-0 bg-gray-100 rounded-md flex items-center justify-center p-6 min-h-[180px] sm:min-h-[420px] ">
+            class="order-1 sm:order-2 flex-1 w-full min-w-0 bg-gray-100 rounded-md flex items-center justify-center p-4 sm:p-6 min-h-[240px] sm:min-h-[360px] md:min-h-[400px] lg:min-h-[460px]">
             <img src="/exclusive/Faheem/proimage/photo1.svg" alt="Havic HV G-92 Gamepad"
               class="max-w-full max-h-[80%] object-contain">
           </div>
         </div>
 
         <div>
-          <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">Havic HV G-92 Gamepad</h1>
+          <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900">Havic HV G-92 Gamepad</h1>
 
-          <div class="flex items-center gap-3 mt-2">
+          <div class="flex flex-wrap items-center gap-2 sm:gap-3 mt-2">
             <div class="flex items-center text-yellow-400 text-lg ">
               ★★★★<span class="text-gray-300">★</span>
             </div>
@@ -75,7 +87,7 @@
 
           <p class="text-xl sm:text-2xl font-semibold text-gray-900 mt-4">$192.00</p>
 
-          <p class="text-gray-500 text-sm mt-4 max-w-md leading-relaxed">
+          <p class="text-gray-500 text-sm mt-4 max-w-xl leading-relaxed">
             PlayStation 5 Controller Skin High quality vinyl with air
             channel adhesive for easy bubble free install & mess
             free removal Pressure sensitive.
@@ -83,7 +95,7 @@
 
           <div class="border-t border-gray-400 mt-6 pt-6">
 
-            <div class="flex items-center gap-4">
+            <div class="flex flex-wrap items-center gap-3 sm:gap-4">
               <span class="text-sm text-gray-800">Colours:</span>
               <div class="flex items-center gap-2">
                 <button class="w-5 h-5 rounded-full bg-[#A0BCE0] ring-2 ring-offset-2 ring-gray-600"></button>
@@ -91,7 +103,7 @@
               </div>
             </div>
 
-            <div class="flex items-center gap-4 mt-5">
+            <div class="flex flex-wrap items-center gap-3 sm:gap-4 mt-5">
               <span class="text-sm text-gray-800">Size:</span>
               <div class="flex items-center gap-2">
                 <button
@@ -114,7 +126,7 @@
               </div>
 
               <button
-                class="bg-red-500 hover:bg-red-600 transition-colors text-white text-sm font-medium px-10 py-2.5 rounded-md">
+                class="bg-red-500 hover:bg-red-600 transition-colors text-white text-sm font-medium px-8 sm:px-10 py-2.5 rounded-md">
                 Buy Now
               </button>
 
