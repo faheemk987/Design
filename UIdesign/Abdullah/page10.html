@@ -1,50 +1,73 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
-        *{
-
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-            font-family: sans-serif;
-        }
-        body{
-            height: 100vh;
-           background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5)),
-        url("./assets/bike.jpg");
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      body {
+        height: 100vh;
+        background-image:
+          linear-gradient(rgba(0, 0, 0, 0.4)), url("./assets/bike.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
     </style>
-</head>
-<body class="w-full">
-    <header class=" border-2 border-yellow-200 flex items-center justify-between h-[70px] w-[full] bg-white">
-        <div class="flex gap-[10px] items-center justify-center w-[350px] h-[70px] border-2">
-            <img src="./assets/Logo.png" alt="Logo">
+  </head>
+  <body class="w-full">
+    <header
+      style="backdrop-filter: blur(20px)"
+      class="flex items-center justify-center h-[70px] w-full text-white"
+    >
+      <div class="flex gap-[10px] items-center justify-center w-[25%] h-[70px]">
+        <img src="./assets/Logo.png" alt="Logo" />
 
-            <h1>ExploreWander</h1>
+        <h1>ExploreWander</h1>
+      </div>
+      <div
+        class="w-[15%] flex flex-col items-center justify-between h-[70px]"
+      ></div>
 
-        </div>
-        <div class="w-[800px] flex flex-col items-center justify-between h-[70px] border-2">
-        </div>
-
+      <div class="w-[60%] h-[70px] b flex items-center justify-around">
         <p>Home</p>
         <p>Flights</p>
         <p>Hotels</p>
         <p>About</p>
 
-        <button></button>
-        <button></button>
-    
+        <div class="flex gap-[10px] items-center justify-center">
+          <button><img src="./assets/GooglePlay.png" alt="" /></button>
+          <button><img src="./assets/GooglePlay.png" alt="" /></button>
+        </div>
+      </div>
     </header>
-    
 
-</body>
+    <div class="w-full h-[500px] flex items-center justify-center">
+      <div
+        class="w-[45%] h-[400px] text-white flex flex-col items-start justify-center gap-[20px]"
+      >
+        <h1 class="font-semibold text-[50px] max-w-[500px] leading-[50px]">
+          Wander. Unwind. Your Journey Begins Here
+        </h1>
+        <p class="max-w-[500px] text-[20px] leading-[30px] font-thin">
+          Whether you seek the thrill of uncharted paths or the tranquility of
+          breathtaking landscapes, our traveling community is your passport to a
+          world of endless possibilities. Your extraordinary voyage starts now.
+        </p>
+        <button
+          class="bg-[white] text-[black] w-[200px] h-[50px] rounded-[30px] font-bold hover:bg-[#000] hover:text-[white]"
+        >
+          Sign up for free
+        </button>
+      </div>
+      <div class="w-[45%] h-[400px]"></div>
+    </div>
+  </body>
 </html>
