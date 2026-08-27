@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>EduPlay - Create Account</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+</head>
+
+<body class="bg-[#8d8d8d] min-h-screen">
+
+  <!-- ========================================================= -->
+  <!-- MAIN WHITE PAGE -->
+  <!-- ========================================================= -->
+
+  <div
+    class="w-full max-w-[1100px]
+    mx-auto
+    min-h-screen
+    bg-white
+    rounded-[8px]
+    overflow-hidden"
+  >
+
+    <!-- ========================================================= -->
+    <!-- NAVBAR -->
+    <!-- ========================================================= -->
+
+    <header
+      class="w-full
+      h-[58px]
+      border-b border-[#eeeeee]
+      flex items-center"
+    >
+
+      <div
+        class="w-full
+        px-6 sm:px-8 md:px-10
+        flex items-center
+        justify-between"
+      >
+
+        <!-- LOGO -->
+        <a
+          href="#"
+          class="text-[11px]
+          font-semibold
+          text-[#111111]"
+        >
+          EduPlay
+        </a>
+
+
+        <!-- DESKTOP NAV -->
+        <nav class="hidden md:flex items-center">
+
+          <ul
+            class="flex items-center
+            gap-7
+            text-[8px]
+            text-[#555555]"
+          >
+
+            <li>
+              <a
+                href="#"
+                class="text-[#111111]
+                font-medium"
+              >
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-black">
+                Games
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-black">
+                Subjects
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-black">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#"
+                class="border border-[#999999]
+                rounded-[4px]
+                px-4 py-[6px]
+                text-[#222222]"
+              >
+                Sign up
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+
+        <!-- MOBILE MENU BUTTON -->
+        <button
+          id="mobileMenuButton"
+          class="md:hidden
+          text-[18px]
+          text-[#222222]"
+        >
+          <i
+            id="mobileMenuIcon"
+            class="fa-solid fa-bars"
+          ></i>
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <!-- ========================================================= -->
+    <!-- MOBILE NAVIGATION -->
+    <!-- ========================================================= -->
+
+    <div
+      id="mobileMenu"
+      class="hidden
+      md:hidden
+      border-b border-[#eeeeee]
+      bg-white"
+    >
+
+      <nav class="px-6 py-4">
+
+        <ul
+          class="flex flex-col
+          gap-4
+          text-[12px]
+          text-[#444444]"
+        >
+
+          <li>
+            <a href="#">Home</a>
+          </li>
+
+          <li>
+            <a href="#">Games</a>
+          </li>
+
+          <li>
+            <a href="#">Subjects</a>
+          </li>
+
+          <li>
+            <a href="#">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="font-medium">
+              Sign up
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
+
+    <!-- ========================================================= -->
+    <!-- SIGN UP SECTION -->
+    <!-- ========================================================= -->
+
+    <main
+      class="w-full
+      px-6
+      sm:px-10
+      md:px-16
+      lg:px-[105px]"
+    >
+
+      <section
+        class="w-full
+        min-h-[345px]
+        flex
+        flex-col
+        lg:flex-row
+        items-center
+        justify-between
+        gap-10
+        py-12
+        sm:py-14"
+      >
+
+        <!-- ===================================================== -->
+        <!-- FORM -->
+        <!-- ===================================================== -->
+
+        <div
+          class="w-full
+          max-w-[390px]
+          lg:w-[48%]"
+        >
+
+          <!-- TITLE -->
+          <div
+            class="flex
+            items-center
+            justify-between
+            mb-5"
+          >
+
+            <h1
+              class="text-[20px]
+              sm:text-[21px]
+              font-medium
+              text-[#171717]"
+            >
+              Create an account
+            </h1>
+
+            <a
+              href="#"
+              class="text-[8px]
+              sm:text-[9px]
+              text-[#111111]
+              underline"
+            >
+              log in instead
+            </a>
+
+          </div>
+
+
+          <!-- FIRST NAME -->
+          <div class="mb-3">
+
+            <label
+              for="firstName"
+              class="block
+              text-[8px]
+              text-[#555555]
+              mb-1"
+            >
+              First name
+            </label>
+
+            <input
+              id="firstName"
+              type="text"
+              class="w-full
+              h-[32px]
+              border
+              border-[#dcdde2]
+              rounded-[5px]
+              px-3
+              text-[11px]
+              outline-none
+              focus:border-[#999999]"
+            />
+
+          </div>
+
+
+          <!-- LAST NAME -->
+          <div class="mb-3">
+
+            <label
+              for="lastName"
+              class="block
+              text-[8px]
+              text-[#555555]
+              mb-1"
+            >
+              Last name
+            </label>
+
+            <input
+              id="lastName"
+              type="text"
+              class="w-full
+              h-[32px]
+              border
+              border-[#dcdde2]
+              rounded-[5px]
+              px-3
+              text-[11px]
+              outline-none
+              focus:border-[#999999]"
+            />
+
+          </div>
+
+
+          <!-- EMAIL -->
+          <div class="mb-3">
+
+            <label
+              for="email"
+              class="block
+              text-[8px]
+              text-[#555555]
+              mb-1"
+            >
+              Email
+            </label>
+
+            <input
+              id="email"
+              type="email"
+              class="w-full
+              h-[32px]
+              border
+              border-[#dcdde2]
+              rounded-[5px]
+              px-3
+              text-[11px]
+              outline-none
+              focus:border-[#999999]"
+            />
+
+          </div>
+
+
+          <!-- PASSWORD -->
+          <div class="mb-3">
+
+            <label
+              for="password"
+              class="block
+              text-[8px]
+              text-[#555555]
+              mb-1"
+            >
+              Password
+            </label>
+
+            <input
+              id="password"
+              type="password"
+              class="w-full
+              h-[32px]
+              border
+              border-[#dcdde2]
+              rounded-[5px]
+              px-3
+              text-[11px]
+              outline-none
+              focus:border-[#999999]"
+            />
+
+          </div>
+
+
+          <!-- TERMS -->
+          <div
+            class="flex
+            items-start
+            gap-2
+            mb-4"
+          >
+
+            <input
+              id="terms"
+              type="checkbox"
+              class="w-[10px]
+              h-[10px]
+              mt-[2px]
+              accent-black"
+            />
+
+            <label
+              for="terms"
+              class="text-[7px]
+              leading-[10px]
+              text-[#777777]"
+            >
+              By creating an account, I agree to our
+              <a
+                href="#"
+                class="text-[#222222]
+                underline"
+              >
+                Terms of use
+              </a>
+              and
+              <a
+                href="#"
+                class="text-[#222222]
+                underline"
+              >
+                Privacy Policy
+              </a>
+            </label>
+
+          </div>
+
+
+          <!-- CREATE ACCOUNT -->
+          <button
+            type="submit"
+            class="w-full
+            h-[34px]
+            rounded-full
+            bg-[#d1d1d1]
+            text-white
+            text-[10px]
+            font-medium
+            hover:bg-[#bbbbbb]
+            transition"
+          >
+            Create an account
+          </button>
+
+
+          <!-- OR -->
+          <div
+            class="flex
+            items-center
+            gap-3
+            my-3"
+          >
+
+            <div
+              class="flex-1
+              h-[1px]
+              bg-[#dddddd]"
+            ></div>
+
+            <span
+              class="text-[9px]
+              text-[#666666]"
+            >
+              Or
+            </span>
+
+            <div
+              class="flex-1
+              h-[1px]
+              bg-[#dddddd]"
+            ></div>
+
+          </div>
+
+
+          <!-- GOOGLE -->
+          <button
+            type="button"
+            class="w-full
+            h-[34px]
+            border
+            border-[#d5d5d5]
+            rounded-full
+            flex
+            items-center
+            justify-center
+            gap-2
+            text-[9px]
+            text-[#222222]
+            hover:bg-[#fafafa]
+            transition"
+          >
+
+            <!-- Google G -->
+            <span
+              class="font-medium
+              text-[11px]"
+            >
+              <span class="text-[#4285F4]">G</span>
+            </span>
+
+            Continue with Google
+
+          </button>
+
+        </div>
+
+
+        <!-- ===================================================== -->
+        <!-- ILLUSTRATION -->
+        <!-- ===================================================== -->
+
+        <div
+          class="w-full
+          lg:w-[48%]
+          flex
+          items-center
+          justify-center
+          lg:justify-end"
+        >
+
+          <img
+            src="./assets/signup-illustration.png"
+            alt="Create account illustration"
+            class="w-[240px]
+            sm:w-[280px]
+            md:w-[320px]
+            lg:w-[350px]
+            max-w-full
+            object-contain"
+          />
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <!-- ========================================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================================= -->
+
+    <footer
+      class="w-full
+      border-t
+      border-[#eeeeee]"
+    >
+
+      <div
+        class="px-6
+        sm:px-10
+        md:px-16
+        lg:px-[72px]
+        py-8
+        sm:py-10"
+      >
+
+        <div
+          class="grid
+          grid-cols-1
+          sm:grid-cols-2
+          lg:grid-cols-4
+          gap-8
+          lg:gap-12"
+        >
+
+          <!-- ================================================= -->
+          <!-- EDU PLAY -->
+          <!-- ================================================= -->
+
+          <div>
+
+            <h3
+              class="text-[9px]
+              font-semibold
+              mb-3"
+            >
+              EduPlay
+            </h3>
+
+            <p
+              class="text-[7px]
+              leading-3
+              text-[#666666]
+              max-w-[180px]
+              mb-1"
+            >
+              Where every game is a lesson,
+              and every lesson is a game.
+            </p>
+
+            <p
+              class="text-[7px]
+              leading-3
+              text-[#666666]
+              max-w-[190px]
+            "
+            >
+              Our app transforms education into
+              playful games, captivating young minds
+              with interactive fun.
+            </p>
+
+
+            <!-- APP BUTTONS -->
+            <div
+              class="flex
+              items-center
+              gap-2
+              mt-4"
+            >
+
+              <a href="#">
+                <img
+                  src="./assets/google-play.png"
+                  alt="Google Play"
+                  class="h-[27px]
+                  w-auto"
+                />
+              </a>
+
+              <a href="#">
+                <img
+                  src="./assets/app-store.png"
+                  alt="App Store"
+                  class="h-[27px]
+                  w-auto"
+                />
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <!-- ================================================= -->
+          <!-- QUICK LINKS -->
+          <!-- ================================================= -->
+
+          <div>
+
+            <h3
+              class="text-[9px]
+              font-semibold
+              mb-3"
+            >
+              Quick Links
+            </h3>
+
+            <ul
+              class="flex
+              flex-col
+              gap-2
+              text-[7px]
+              text-[#666666]"
+            >
+
+              <li>
+                <a href="#">Home</a>
+              </li>
+
+              <li>
+                <a href="#">Games</a>
+              </li>
+
+              <li>
+                <a href="#">Subjects</a>
+              </li>
+
+              <li>
+                <a href="#">About</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <!-- ================================================= -->
+          <!-- COMPANY -->
+          <!-- ================================================= -->
+
+          <div>
+
+            <h3
+              class="text-[9px]
+              font-semibold
+              mb-3"
+            >
+              Company
+            </h3>
+
+            <ul
+              class="flex
+              flex-col
+              gap-2
+              text-[7px]
+              text-[#666666]"
+            >
+
+              <li>
+                <a href="#">About</a>
+              </li>
+
+              <li>
+                <a href="#">Features</a>
+              </li>
+
+              <li>
+                <a href="#">Works</a>
+              </li>
+
+              <li>
+                <a href="#">Career</a>
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <!-- ================================================= -->
+          <!-- CONNECT -->
+          <!-- ================================================= -->
+
+          <div>
+
+            <h3
+              class="text-[9px]
+              font-semibold
+              mb-3"
+            >
+              Connect with us
+            </h3>
+
+            <ul
+              class="flex
+              flex-col
+              gap-2
+              text-[7px]
+              text-[#666666]"
+            >
+
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-2"
+                >
+                  <i
+                    class="fa-brands
+                    fa-facebook
+                    text-[#1877F2]"
+                  ></i>
+                  Facebook
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-2"
+                >
+                  <i
+                    class="fa-brands
+                    fa-instagram
+                    text-[#E4405F]"
+                  ></i>
+                  Instagram
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-2"
+                >
+                  <i
+                    class="fa-brands
+                    fa-twitter
+                    text-[#1DA1F2]"
+                  ></i>
+                  Twitter
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="flex items-center gap-2"
+                >
+                  <i
+                    class="fa-brands
+                    fa-tiktok
+                    text-black"
+                  ></i>
+                  TikTok
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================================================= -->
+        <!-- FOOTER BOTTOM -->
+        <!-- ================================================= -->
+
+        <div
+          class="border-t
+          border-[#eeeeee]
+          mt-8
+          pt-5
+          flex
+          flex-col
+          sm:flex-row
+          items-start
+          sm:items-center
+          justify-between
+          gap-3"
+        >
+
+          <div
+            class="flex
+            items-center
+            gap-5
+            text-[7px]
+            text-[#555555]"
+          >
+
+            <a href="#">
+              Privacy Policy
+            </a>
+
+            <a href="#">
+              Terms & Conditions
+            </a>
+
+            <a href="#">
+              Support
+            </a>
+
+          </div>
+
+          <p
+            class="text-[7px]
+            text-[#555555]"
+          >
+            © Copyright 2024, All Rights Reserved
+          </p>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+  </div>
+
+
+  <!-- ========================================================= -->
+  <!-- MOBILE MENU SCRIPT -->
+  <!-- ========================================================= -->
+
+  <script>
+
+    const mobileMenuButton =
+      document.getElementById("mobileMenuButton");
+
+    const mobileMenu =
+      document.getElementById("mobileMenu");
+
+    const mobileMenuIcon =
+      document.getElementById("mobileMenuIcon");
+
+
+    mobileMenuButton.addEventListener("click", () => {
+
+      mobileMenu.classList.toggle("hidden");
+
+      if (mobileMenu.classList.contains("hidden")) {
+
+        mobileMenuIcon.classList.remove("fa-xmark");
+        mobileMenuIcon.classList.add("fa-bars");
+
+      } else {
+
+        mobileMenuIcon.classList.remove("fa-bars");
+        mobileMenuIcon.classList.add("fa-xmark");
+
+      }
+
+    });
+
+  </script>
+
+</body>
+</html>
